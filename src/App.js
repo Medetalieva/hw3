@@ -1,4 +1,4 @@
-
+import React from 'react';
 import './App.css';
 // import Expense from './components/Expense';
  import {ExpenseItem} from './components/ExpenseItem';
@@ -17,6 +17,12 @@ const expense = [
     date: new Date(2023, 2, 20),
     amount: 1.5
   },
+  {
+    id:'el3',
+    title:'Ice-Cream',
+    date: new Date(2023, 8, 16),
+    amount: 1.9
+  },
 ]
 
   return (
@@ -31,6 +37,11 @@ const expense = [
       title={expense[1].title}
       date={expense[1].date} 
       amount={expense[1].amount} 
+      />
+      <ExpenseItem 
+      title={expense[2].title}
+      date={expense[2].date} 
+      amount={expense[2].amount} 
       />
     </div>
   );

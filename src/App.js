@@ -38,6 +38,7 @@ const expense = [
       date={expense[1].date} 
       amount={expense[1].amount} 
       />
+      
       <ExpenseItem 
       title={expense[2].title}
       date={expense[2].date} 
